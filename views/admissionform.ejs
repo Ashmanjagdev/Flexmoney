@@ -1,0 +1,75 @@
+<%- include("header") -%>
+
+<div class="signform">
+<div class="cont" >
+<div class="title">Yoga Admission Form</div>
+<div class="content">
+<form action="/post" method="post" >
+
+  <div class="user-details">
+    <div class="input-box">
+      <span class="details">Full Name</span>
+      <input name="fullname" type="text" placeholder="Enter your first name" required />
+    </div>
+    <div class="input-box" >
+      <span class="details">Age</span>
+      <input name="age"  type="number" min="18" max="65" placeholder="Enter your Age" required />
+    </div>
+    <div class="input-box">
+      <span  class="details">Email</span>
+      <input name="email" type="text" placeholder="Enter your Email" required />
+    </div>
+    <div class="input-box">
+      <span class="details">Phone Number</span>
+      <input name="number" type="number"  placeholder="Enter your number" required />
+    </div>
+    <div class="input-box">
+      <span class="details">Timings </span>
+
+      <label  for="timings"></label>
+      <select class="dropdown" id="timings" name="timings">
+       <option value="6-7AM">6-7AM</option>
+       <option value="7-8AM">7-8AM</option>
+       <option value="8-9AM">8-9AM</option>
+       <option value="5-6PM">5-6PM</option>
+      </select>
+
+    </div>
+    <div class="input-box">
+      <span class="details">Month</span>
+
+      <label  for="month"></label>
+      <select class="dropdown" id="month" name="month">
+       <option value="January">January</option>
+       <option value="February">February</option>
+       <option value="March">March</option>
+       <option value="April">April</option>
+       <option value="May">May</option>
+       <option value="June">June</option>
+       <option value="July">July</option>
+       <option value="August">August</option>
+       <option value="September">September</option>
+       <option value="October">October</option>
+       <option value="November">November</option>
+       <option value="December">December</option>
+      </select>
+
+    </div>
+    <div class="input-box">
+      <span  class="details">Payment</span>
+      <input name="payment" type="text" value="Rs.500" required disabled />
+    </div>
+    <br />
+
+  </div>
+
+
+  <div class="button">
+    <input  class="check" type="submit" value="Complete Payment" / >
+  </div>
+</form>
+</div>
+</div>
+</div>
+
+<%- include("footer") -%>

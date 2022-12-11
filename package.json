@@ -1,0 +1,21 @@
+{
+  "name": "Internship Assignment",
+  "version": "1.0.0",
+  "description": "Flexmoney Internship Assignment ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Ashman Jagdev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.8.0",
+    "mysql": "^2.18.1"
+  }
+}
